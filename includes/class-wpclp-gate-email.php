@@ -33,7 +33,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
  * - Call WPCLP_DB::record_email_unlock() — it handles duplicates gracefully.
  * - wp_send_json_error() for all failure paths.
  */
-class WPCLP_Gate_Email {
+class WPCLP_Gate_Email implements WPCLP_Gate_Interface {
 
     const AJAX_ACTION   = 'wpclp_unlock_email';
     const COOKIE_PREFIX = 'wpclp_em_';

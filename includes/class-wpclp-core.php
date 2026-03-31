@@ -11,10 +11,10 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
  */
 class WPCLP_Core {
 
-    /** @var WPCLP_Gate_Password */
+    /** @var WPCLP_Gate_Interface */
     private $gate_password;
 
-    /** @var WPCLP_Gate_Email */
+    /** @var WPCLP_Gate_Interface */
     private $gate_email;
 
     public function __construct() {

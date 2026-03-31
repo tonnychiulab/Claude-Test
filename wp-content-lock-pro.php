@@ -26,6 +26,7 @@ define( 'WPCLP_META_PARTIAL_REVEAL', '_wpclp_partial_reveal' ); // words to show
 
 // ── Autoload modules ───────────────────────────────────────────────────────────
 require_once WPCLP_PLUGIN_DIR . 'includes/class-wpclp-db.php';
+require_once WPCLP_PLUGIN_DIR . 'includes/interface-wpclp-gate.php';
 require_once WPCLP_PLUGIN_DIR . 'includes/class-wpclp-gate-password.php';
 require_once WPCLP_PLUGIN_DIR . 'includes/class-wpclp-gate-email.php';
 require_once WPCLP_PLUGIN_DIR . 'includes/class-wpclp-core.php';

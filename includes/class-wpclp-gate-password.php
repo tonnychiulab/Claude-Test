@@ -24,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
  * - Never echo the correct password or hash in any response.
  * - wp_send_json_error() for all failure paths.
  */
-class WPCLP_Gate_Password {
+class WPCLP_Gate_Password implements WPCLP_Gate_Interface {
 
     const AJAX_ACTION = 'wpclp_unlock_password';
     const COOKIE_PREFIX = 'wpclp_pw_';
