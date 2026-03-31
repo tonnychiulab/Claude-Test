@@ -66,7 +66,7 @@ class WPCLP_Meta_Box {
         $partial_reveal = absint( get_post_meta( $post->ID, WPCLP_META_PARTIAL_REVEAL, true ) );
 
         // Validate gate_type against whitelist; default to 'password'
-        $allowed_gate_types = array_keys( WPCLP_Core::get_gate_types() );
+        $allowed_gate_types = WPCLP_Core::get_gate_types();
         if ( ! in_array( $gate_type, $allowed_gate_types, true ) ) {
             $gate_type = 'password';
         }
@@ -90,7 +90,7 @@ class WPCLP_Meta_Box {
         update_post_meta( $post_id, WPCLP_META_ENABLED, $enabled );
 
         // Sanitize gate_type with whitelist
-        $allowed_gate_types = array_keys( WPCLP_Core::get_gate_types() );
+        $allowed_gate_types = WPCLP_Core::get_gate_types();
         $gate_type = isset( $_POST['wpclp_gate_type'] )
             ? sanitize_key( wp_unslash( $_POST['wpclp_gate_type'] ) )
             : 'password';

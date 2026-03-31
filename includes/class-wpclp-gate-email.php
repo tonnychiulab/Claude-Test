@@ -74,16 +74,33 @@ class WPCLP_Gate_Email {
     public function is_unlocked( int $post_id ): bool {
         $cookie_name = self::COOKIE_PREFIX . $post_id;
 
+        // 1. Cookie must be present.
         if ( ! isset( $_COOKIE[ $cookie_name ] ) ) {
             return false;
         }
 
-        // Cookie value is a wp_hash() string — non-empty means a valid
-        // hash was set by set_unlock_cookie(). The hash itself prevents
-        // forgery because an attacker cannot reproduce wp_hash() output
-        // without the WordPress secret keys.
+        // 2. Retrieve the cookie value.
         $value = $_COOKIE[ $cookie_name ];
-        return ( '' !== $value );
+
+        // 3. Basic format check: wp_hash() returns a 64-character hex string.
+        if ( ! preg_match( '/^[0-9a-f]{64}$/', $value ) ) {
+            return false;
+        }
+
+        // 4. Fetch all email records for this post from the database.
+        $records = WPCLP_DB::get_emails_for_post( $post_id );
+
+        // 5 & 6. For each recorded email, compute the expected hash and compare
+        //        using hash_equals() to prevent timing-based attacks.
+        foreach ( $records as $record ) {
+            $expected = $this->get_expected_cookie_value( $post_id, $record->email );
+            if ( hash_equals( $expected, $value ) ) {
+                return true;
+            }
+        }
+
+        // 7. No match found — cookie is forged or invalid.
+        return false;
     }
 
     /**

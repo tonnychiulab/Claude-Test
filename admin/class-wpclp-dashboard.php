@@ -146,7 +146,7 @@ class WPCLP_Dashboard {
                     absint( $row->id ?? 0 ),
                     absint( $row->post_id ?? 0 ),
                     sanitize_email( $row->email ?? '' ),
-                    sanitize_text_field( $row->created_at ?? '' ),
+                    sanitize_text_field( $row->unlocked_at ?? '' ),
                 ] );
             }
 

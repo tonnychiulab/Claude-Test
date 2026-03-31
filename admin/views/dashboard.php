@@ -101,7 +101,7 @@ $base_url     = admin_url( 'options-general.php?page=wp-content-lock-pro' );
                                                 <?php foreach ( $post_emails as $email_row ) : ?>
                                                     <tr>
                                                         <td><?php echo esc_html( $email_row->email ?? '' ); ?></td>
-                                                        <td><?php echo esc_html( $email_row->created_at ?? '' ); ?></td>
+                                                        <td><?php echo esc_html( $email_row->unlocked_at ?? '' ); ?></td>
                                                         <td>
                                                             <form method="post" action="<?php echo esc_url( $admin_post ); ?>" class="wpclp-delete-email-form">
                                                                 <input type="hidden" name="action" value="wpclp_delete_email" />
