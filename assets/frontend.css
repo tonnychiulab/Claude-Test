@@ -1,0 +1,150 @@
+/* WPCLP Frontend — Lock screen styles
+ * CSS custom properties allow themes to override colours without extra specificity.
+ */
+
+:root {
+    --wpclp-primary: #2563eb;
+    --wpclp-primary-hover: #1d4ed8;
+    --wpclp-bg: #ffffff;
+    --wpclp-border: #e2e8f0;
+    --wpclp-text: #1e293b;
+    --wpclp-subtext: #64748b;
+    --wpclp-error-bg: #fef2f2;
+    --wpclp-error-border: #fca5a5;
+    --wpclp-error-text: #b91c1c;
+    --wpclp-radius: 8px;
+    --wpclp-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* ── Card container ─────────────────────────────────────────────────────────── */
+.wpclp-lock-screen {
+    box-sizing: border-box;
+    max-width: 480px;
+    margin: 2rem auto;
+    padding: 2rem 2.5rem;
+    background: var(--wpclp-bg);
+    border: 1px solid var(--wpclp-border);
+    border-radius: var(--wpclp-radius);
+    box-shadow: var(--wpclp-shadow);
+    font-family: inherit;
+    color: var(--wpclp-text);
+}
+
+/* ── Icon / decoration ──────────────────────────────────────────────────────── */
+.wpclp-lock-screen .wpclp-lock-icon {
+    display: block;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    line-height: 1;
+}
+
+/* ── Headline (message) ─────────────────────────────────────────────────────── */
+.wpclp-lock-screen .wpclp-lock-message {
+    margin: 0 0 1.25rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--wpclp-text);
+    line-height: 1.4;
+}
+
+/* ── Form layout ────────────────────────────────────────────────────────────── */
+.wpclp-lock-screen form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.875rem;
+}
+
+/* ── Input field ────────────────────────────────────────────────────────────── */
+.wpclp-lock-screen input[type="password"],
+.wpclp-lock-screen input[type="email"] {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.625rem 0.875rem;
+    font-size: 1rem;
+    font-family: inherit;
+    color: var(--wpclp-text);
+    background: var(--wpclp-bg);
+    border: 1px solid var(--wpclp-border);
+    border-radius: var(--wpclp-radius);
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    outline: none;
+}
+
+.wpclp-lock-screen input[type="password"]:focus,
+.wpclp-lock-screen input[type="email"]:focus {
+    border-color: var(--wpclp-primary);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* ── Submit button ──────────────────────────────────────────────────────────── */
+.wpclp-lock-screen button[type="submit"] {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.675rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: inherit;
+    color: #ffffff;
+    background: var(--wpclp-primary);
+    border: none;
+    border-radius: var(--wpclp-radius);
+    cursor: pointer;
+    transition: background 0.15s ease, opacity 0.15s ease;
+    line-height: 1.5;
+}
+
+.wpclp-lock-screen button[type="submit"]:hover {
+    background: var(--wpclp-primary-hover);
+}
+
+.wpclp-lock-screen button[type="submit"]:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* ── Error message ──────────────────────────────────────────────────────────── */
+.wpclp-lock-screen .wpclp-error {
+    display: none;
+    padding: 0.625rem 0.875rem;
+    font-size: 0.9rem;
+    color: var(--wpclp-error-text);
+    background: var(--wpclp-error-bg);
+    border: 1px solid var(--wpclp-error-border);
+    border-radius: var(--wpclp-radius);
+}
+
+/* ── Privacy / sub-text ─────────────────────────────────────────────────────── */
+.wpclp-lock-screen .wpclp-privacy-note {
+    margin: 0;
+    font-size: 0.8rem;
+    color: var(--wpclp-subtext);
+    text-align: center;
+}
+
+/* ── Partial content area ───────────────────────────────────────────────────── */
+.wpclp-partial-content {
+    position: relative;
+    overflow: hidden;
+}
+
+.wpclp-partial-content::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4rem;
+    background: linear-gradient(to bottom, transparent, var(--wpclp-bg, #fff));
+    pointer-events: none;
+}
+
+/* ── Responsive ─────────────────────────────────────────────────────────────── */
+@media ( max-width: 540px ) {
+    .wpclp-lock-screen {
+        margin: 1rem;
+        padding: 1.5rem 1.25rem;
+    }
+}

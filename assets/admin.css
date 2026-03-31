@@ -1,0 +1,273 @@
+/* WPCLP Admin — Dashboard + Meta Box styles */
+
+/* =========================================================
+   Meta Box
+   ========================================================= */
+
+.wpclp-meta-box {
+    padding: 4px 0;
+}
+
+.wpclp-field {
+    margin-bottom: 14px;
+}
+
+.wpclp-field label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.wpclp-field--checkbox label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.wpclp-field--checkbox input[type="checkbox"] {
+    margin: 0;
+    width: 16px;
+    height: 16px;
+}
+
+.wpclp-field select,
+.wpclp-field input[type="password"],
+.wpclp-field input[type="number"],
+.wpclp-field textarea {
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.wpclp-field textarea {
+    resize: vertical;
+    min-height: 72px;
+}
+
+.wpclp-field .description {
+    color: #646970;
+    font-style: italic;
+    margin-top: 4px;
+    font-size: 12px;
+}
+
+/* =========================================================
+   Dashboard Header
+   ========================================================= */
+
+.wpclp-dashboard-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 16px 0;
+    gap: 10px;
+}
+
+.wpclp-export-btn {
+    /* Extra emphasis for the primary action */
+}
+
+/* =========================================================
+   Dashboard Table
+   ========================================================= */
+
+.wpclp-dashboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+    table-layout: auto;
+}
+
+.wpclp-dashboard-table thead th {
+    text-align: left;
+    padding: 8px 12px;
+    font-weight: 700;
+    background-color: #f0f0f1;
+    border-bottom: 2px solid #c3c4c7;
+    white-space: nowrap;
+}
+
+.wpclp-dashboard-table tbody td {
+    padding: 8px 12px;
+    vertical-align: top;
+    border-bottom: 1px solid #e2e4e7;
+}
+
+.wpclp-dashboard-table tbody tr:hover td {
+    background-color: #f6f7f7;
+}
+
+.wpclp-col-title a {
+    text-decoration: none;
+    color: #2271b1;
+}
+
+.wpclp-col-title a:hover {
+    text-decoration: underline;
+    color: #135e96;
+}
+
+/* =========================================================
+   Email Count + Toggle
+   ========================================================= */
+
+.wpclp-email-count {
+    display: inline-block;
+    background: #2271b1;
+    color: #fff;
+    border-radius: 10px;
+    padding: 1px 8px;
+    font-size: 11px;
+    font-weight: 700;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+.wpclp-toggle-emails {
+    color: #2271b1;
+    cursor: pointer;
+    font-size: 12px;
+    vertical-align: middle;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.wpclp-toggle-emails:hover {
+    color: #135e96;
+    text-decoration: underline;
+}
+
+/* =========================================================
+   Per-Post Email Sub-Table
+   ========================================================= */
+
+.wpclp-email-list {
+    margin-top: 10px;
+}
+
+.wpclp-email-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.wpclp-email-table thead th {
+    background: #f6f7f7;
+    padding: 5px 10px;
+    font-weight: 600;
+    border-bottom: 1px solid #c3c4c7;
+    text-align: left;
+}
+
+.wpclp-email-table tbody td {
+    padding: 5px 10px;
+    border-bottom: 1px solid #e2e4e7;
+}
+
+.wpclp-email-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* =========================================================
+   Delete Button
+   ========================================================= */
+
+.wpclp-delete-email-form {
+    display: inline;
+}
+
+.wpclp-delete-btn {
+    color: #b32d2e;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 12px;
+}
+
+.wpclp-delete-btn:hover {
+    color: #8a2122;
+    text-decoration: underline;
+}
+
+/* =========================================================
+   Pagination
+   ========================================================= */
+
+.wpclp-pagination {
+    margin-top: 16px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.wpclp-pagination .tablenav-pages {
+    float: none;
+}
+
+/* =========================================================
+   No Posts / Footer
+   ========================================================= */
+
+.wpclp-no-posts {
+    color: #646970;
+    font-style: italic;
+    margin: 20px 0;
+}
+
+.wpclp-dashboard-footer {
+    margin-top: 16px;
+    color: #646970;
+}
+
+/* =========================================================
+   Responsive
+   ========================================================= */
+
+@media screen and (max-width: 782px) {
+    .wpclp-dashboard-table,
+    .wpclp-dashboard-table thead,
+    .wpclp-dashboard-table tbody,
+    .wpclp-dashboard-table th,
+    .wpclp-dashboard-table td,
+    .wpclp-dashboard-table tr {
+        display: block;
+        width: 100%;
+    }
+
+    .wpclp-dashboard-table thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .wpclp-dashboard-table tbody td {
+        position: relative;
+        padding-left: 45%;
+        border: none;
+        border-bottom: 1px solid #e2e4e7;
+        white-space: normal;
+    }
+
+    .wpclp-dashboard-table tbody td::before {
+        position: absolute;
+        top: 8px;
+        left: 12px;
+        width: 40%;
+        padding-right: 8px;
+        font-weight: 700;
+        white-space: nowrap;
+        content: attr( data-label );
+    }
+
+    .wpclp-dashboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
