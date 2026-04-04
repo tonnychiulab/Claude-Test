@@ -1,0 +1,347 @@
+# WP Unauthorized Access Tracker — Japanese (ja)
+# Copyright (C) 2024 IT Team
+# This file is distributed under the same license as the WP Unauthorized Access Tracker plugin.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Unauthorized Access Tracker 1.0.0\n"
+"Report-Msgid-Bugs-To: https://example.com/\n"
+"POT-Creation-Date: 2024-01-01 00:00+0000\n"
+"PO-Revision-Date: 2024-01-01 00:00+0000\n"
+"Last-Translator: IT Team <admin@example.com>\n"
+"Language-Team: Japanese <ja@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Domain: wp-unauthorized-access-tracker\n"
+
+#. Plugin Name of the plugin
+msgid "Unauthorized Access Tracker"
+msgstr "不正アクセストラッカー"
+
+#. Plugin Description
+msgid "Detects and logs unauthorized WordPress admin access, including brute-force attempts and off-hours admin logins."
+msgstr "ブルートフォース攻撃や時間外の管理者ログインを含む、不正な WordPress 管理画面へのアクセスを検出・記録します。"
+
+#: includes/class-wuat-alerter.php
+#, php-format
+msgctxt "Email subject for brute-force alert. %s = site name."
+msgid "[%s] Security Alert: Brute-Force Attack Detected"
+msgstr "[%s] セキュリティ警告：ブルートフォース攻撃を検出"
+
+#: includes/class-wuat-alerter.php
+msgid "Brute-Force Attack Detected"
+msgstr "ブルートフォース攻撃を検出"
+
+#: includes/class-wuat-alerter.php
+#, php-format
+msgctxt "1: site URL"
+msgid "Site: %s"
+msgstr "サイト：%s"
+
+#: includes/class-wuat-alerter.php
+#, php-format
+msgctxt "1: IP address"
+msgid "Source IP: %s"
+msgstr "送信元 IP：%s"
+
+#: includes/class-wuat-alerter.php
+#, php-format
+msgctxt "1: username"
+msgid "Username: %s"
+msgstr "ユーザー名：%s"
+
+#: includes/class-wuat-alerter.php
+#, php-format
+msgctxt "1: timestamp"
+msgid "Time (UTC): %s"
+msgstr "時刻（UTC）：%s"
+
+#: includes/class-wuat-alerter.php
+#, php-format
+msgid "[%s] Security Alert: Off-Hours Admin Login Detected"
+msgstr "[%s] セキュリティ警告：時間外の管理者ログインを検出"
+
+#: includes/class-wuat-alerter.php
+msgid "Off-Hours Admin Login Detected"
+msgstr "時間外の管理者ログインを検出"
+
+#: includes/class-wuat-alerter.php
+#, php-format
+msgid "User ID: %d"
+msgstr "ユーザー ID：%d"
+
+#: includes/class-wuat-alerter.php
+#, php-format
+msgid "Login Time (site): %s"
+msgstr "ログイン時刻（サイト時間）：%s"
+
+#: includes/class-wuat-alerter.php
+msgid "Recent failed attempts from this IP:"
+msgstr "この IP からの最近のログイン失敗履歴："
+
+#: includes/class-wuat-alerter.php
+#, php-format
+msgctxt "Link to plugin settings page."
+msgid "Manage alerts: %s"
+msgstr "アラート管理：%s"
+
+#: includes/class-wuat-admin.php
+msgid "Audit Trail"
+msgstr "監査ログ"
+
+#: includes/class-wuat-admin.php
+msgid "Export CSV"
+msgstr "CSV エクスポート"
+
+#: includes/class-wuat-admin.php
+msgid "All Events"
+msgstr "すべてのイベント"
+
+#: includes/class-wuat-admin.php
+msgid "Login Success"
+msgstr "ログイン成功"
+
+#: includes/class-wuat-admin.php
+msgid "Login Failed"
+msgstr "ログイン失敗"
+
+#: includes/class-wuat-admin.php
+msgid "Logout"
+msgstr "ログアウト"
+
+#: includes/class-wuat-admin.php
+msgid "Lockout"
+msgstr "ロックアウト"
+
+#: includes/class-wuat-admin.php
+msgid "Off-Hours Login"
+msgstr "時間外ログイン"
+
+#: includes/class-wuat-admin.php
+msgid "Username"
+msgstr "ユーザー名"
+
+#: includes/class-wuat-admin.php
+msgid "IP Address"
+msgstr "IP アドレス"
+
+#: includes/class-wuat-admin.php
+msgid "Filter"
+msgstr "フィルター"
+
+#: includes/class-wuat-admin.php
+msgid "Reset"
+msgstr "リセット"
+
+#: includes/class-wuat-admin.php
+msgid "Permission denied."
+msgstr "権限がありません。"
+
+#: includes/class-wuat-admin.php
+msgid "No items selected."
+msgstr "項目が選択されていません。"
+
+#: includes/class-wuat-admin.php
+msgid "Exporting…"
+msgstr "エクスポート中…"
+
+#: includes/class-wuat-admin.php
+msgid "Export complete."
+msgstr "エクスポートが完了しました。"
+
+#: includes/class-wuat-admin.php
+msgid "Export failed."
+msgstr "エクスポートに失敗しました。"
+
+#: includes/class-wuat-admin.php
+msgid "Event"
+msgstr "イベント"
+
+#: includes/class-wuat-admin.php
+msgid "User Agent"
+msgstr "ユーザーエージェント"
+
+#: includes/class-wuat-admin.php
+msgid "Time"
+msgstr "時刻"
+
+#: includes/class-wuat-admin.php
+msgid "Details"
+msgstr "詳細"
+
+#: includes/class-wuat-admin.php
+msgid "Delete"
+msgstr "削除"
+
+#: includes/class-wuat-admin.php
+msgid "log entry"
+msgstr "ログエントリ"
+
+#: includes/class-wuat-admin.php
+msgid "log entries"
+msgstr "ログエントリ"
+
+#: includes/class-wuat-settings.php
+msgid "WUAT Settings"
+msgstr "WUAT 設定"
+
+#: includes/class-wuat-settings.php
+msgid "Settings"
+msgstr "設定"
+
+#: includes/class-wuat-settings.php
+msgid "WP Unauthorized Access Tracker — Settings"
+msgstr "WP 不正アクセストラッカー — 設定"
+
+#: includes/class-wuat-settings.php
+msgid "Brute-Force Detection"
+msgstr "ブルートフォース検出"
+
+#: includes/class-wuat-settings.php
+msgid "Failure Threshold"
+msgstr "失敗回数のしきい値"
+
+#: includes/class-wuat-settings.php
+msgid "Number of failed logins from the same IP that triggers an alert."
+msgstr "同一 IP からのログイン失敗回数がこの値に達するとアラートが送信されます。"
+
+#: includes/class-wuat-settings.php
+msgid "Time Window (minutes)"
+msgstr "時間枠（分）"
+
+#: includes/class-wuat-settings.php
+msgid "The rolling window (in minutes) in which failures are counted."
+msgstr "失敗回数をカウントするスライディング時間枠（分単位）。"
+
+#: includes/class-wuat-settings.php
+msgid "Off-Hours Login Detection"
+msgstr "時間外ログイン検出"
+
+#: includes/class-wuat-settings.php
+msgid "Alert when a monitored user logs in outside the configured business hours. Uses the site timezone configured under Settings › General."
+msgstr "監視対象のユーザーが設定された業務時間外にログインした場合にアラートを送信します。「設定 › 一般」で設定したサイトのタイムゾーンを使用します。"
+
+#: includes/class-wuat-settings.php
+msgid "Enable Off-Hours Detection"
+msgstr "時間外検出を有効にする"
+
+#: includes/class-wuat-settings.php
+msgid "Alert when a monitored user logs in outside business hours."
+msgstr "監視対象のユーザーが業務時間外にログインした場合にアラートを送信します。"
+
+#: includes/class-wuat-settings.php
+msgid "Business Hours Start"
+msgstr "業務開始時刻"
+
+#: includes/class-wuat-settings.php
+msgid "Format: HH:MM (24h). Uses the site timezone set under Settings › General."
+msgstr "形式：HH:MM（24 時間制）。「設定 › 一般」で設定したサイトのタイムゾーンを使用します。"
+
+#: includes/class-wuat-settings.php
+msgid "Business Hours End"
+msgstr "業務終了時刻"
+
+#: includes/class-wuat-settings.php
+msgid "Format: HH:MM (24h)."
+msgstr "形式：HH:MM（24 時間制）。"
+
+#: includes/class-wuat-settings.php
+msgid "Business Days"
+msgstr "業務日"
+
+#: includes/class-wuat-settings.php
+msgid "Days considered business days. Logins on other days are always flagged."
+msgstr "業務日として扱う曜日。業務日以外のログインは常にフラグが立てられます。"
+
+#: includes/class-wuat-settings.php
+msgid "Monday"
+msgstr "月曜日"
+
+#: includes/class-wuat-settings.php
+msgid "Tuesday"
+msgstr "火曜日"
+
+#: includes/class-wuat-settings.php
+msgid "Wednesday"
+msgstr "水曜日"
+
+#: includes/class-wuat-settings.php
+msgid "Thursday"
+msgstr "木曜日"
+
+#: includes/class-wuat-settings.php
+msgid "Friday"
+msgstr "金曜日"
+
+#: includes/class-wuat-settings.php
+msgid "Saturday"
+msgstr "土曜日"
+
+#: includes/class-wuat-settings.php
+msgid "Sunday"
+msgstr "日曜日"
+
+#: includes/class-wuat-settings.php
+msgid "Monitor Roles"
+msgstr "監視するロール"
+
+#: includes/class-wuat-settings.php
+msgid "Only logins by users with these roles trigger off-hours alerts."
+msgstr "これらのロールを持つユーザーのログインのみ、時間外アラートをトリガーします。"
+
+#: includes/class-wuat-settings.php
+msgid "Notifications"
+msgstr "通知"
+
+#: includes/class-wuat-settings.php
+msgid "Enable Email Alerts"
+msgstr "メールアラートを有効にする"
+
+#: includes/class-wuat-settings.php
+msgid "Send email alerts for brute-force attacks and off-hours logins."
+msgstr "ブルートフォース攻撃と時間外ログインのメールアラートを送信します。"
+
+#: includes/class-wuat-settings.php
+msgid "Alert Email Address"
+msgstr "アラートメールアドレス"
+
+#: includes/class-wuat-settings.php
+msgid "Recipient for security alerts. Defaults to the site admin email."
+msgstr "セキュリティアラートの受信者。デフォルトはサイト管理者のメールアドレスです。"
+
+#: includes/class-wuat-settings.php
+msgid "Log Management"
+msgstr "ログ管理"
+
+#: includes/class-wuat-settings.php
+msgid "Log Retention (days)"
+msgstr "ログ保持期間（日）"
+
+#: includes/class-wuat-settings.php
+msgid "Log entries older than this many days are automatically deleted."
+msgstr "この日数を超えたログエントリは自動的に削除されます。"
+
+#: includes/class-wuat-settings.php
+msgid "Anonymize IP Addresses"
+msgstr "IP アドレスを匿名化する"
+
+#: includes/class-wuat-settings.php
+msgid "Mask the last octet of IPv4 / last 80 bits of IPv6 before storage (GDPR)."
+msgstr "保存前に IPv4 の最終オクテット / IPv6 の最後の 80 ビットをマスクします（GDPR 対応）。"
+
+#: includes/class-wuat-settings.php
+msgid "Enable IP Lookup Links"
+msgstr "IP 参照リンクを有効にする"
+
+#: includes/class-wuat-settings.php
+msgid "Show a clickable link to ipinfo.io for each IP address in the log table. Disabled by default to prevent sending visitor IPs to a third-party service."
+msgstr "ログテーブルの各 IP アドレスに ipinfo.io へのリンクを表示します。訪問者の IP がサードパーティに送信されるのを防ぐため、デフォルトは無効です。"
+
+#: includes/class-wuat-admin.php
+#, php-format
+msgctxt "%d = number of items selected for deletion"
+msgid "%d item(s) will be permanently deleted. Continue?"
+msgstr "%d 件のログを完全に削除します。続行しますか？"

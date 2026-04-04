@@ -1,0 +1,349 @@
+# Copyright (C) 2024 IT Team
+# This file is distributed under the same license as the WP Unauthorized Access Tracker plugin.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Unauthorized Access Tracker 1.0.0\n"
+"Report-Msgid-Bugs-To: https://example.com/\n"
+"POT-Creation-Date: 2024-01-01 00:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: WP-CLI 2.x\n"
+"X-Domain: wp-unauthorized-access-tracker\n"
+
+#. Plugin Name of the plugin
+msgid "Unauthorized Access Tracker"
+msgstr ""
+
+#. Plugin Description
+msgid "Detects and logs unauthorized WordPress admin access, including brute-force attempts and off-hours admin logins."
+msgstr ""
+
+#: includes/class-wuat-alerter.php
+#, php-format
+msgctxt "Email subject for brute-force alert. %s = site name."
+msgid "[%s] Security Alert: Brute-Force Attack Detected"
+msgstr ""
+
+#: includes/class-wuat-alerter.php
+msgid "Brute-Force Attack Detected"
+msgstr ""
+
+#: includes/class-wuat-alerter.php
+#, php-format
+msgctxt "1: site URL"
+msgid "Site: %s"
+msgstr ""
+
+#: includes/class-wuat-alerter.php
+#, php-format
+msgctxt "1: IP address"
+msgid "Source IP: %s"
+msgstr ""
+
+#: includes/class-wuat-alerter.php
+#, php-format
+msgctxt "1: username"
+msgid "Username: %s"
+msgstr ""
+
+#: includes/class-wuat-alerter.php
+#, php-format
+msgctxt "1: timestamp"
+msgid "Time (UTC): %s"
+msgstr ""
+
+#: includes/class-wuat-alerter.php
+#, php-format
+msgid "[%s] Security Alert: Off-Hours Admin Login Detected"
+msgstr ""
+
+#: includes/class-wuat-alerter.php
+msgid "Off-Hours Admin Login Detected"
+msgstr ""
+
+#: includes/class-wuat-alerter.php
+#, php-format
+msgid "User ID: %d"
+msgstr ""
+
+#: includes/class-wuat-alerter.php
+#, php-format
+msgid "Login Time (site): %s"
+msgstr ""
+
+#: includes/class-wuat-alerter.php
+msgid "Recent failed attempts from this IP:"
+msgstr ""
+
+#: includes/class-wuat-alerter.php
+#, php-format
+msgctxt "Link to plugin settings page."
+msgid "Manage alerts: %s"
+msgstr ""
+
+#: includes/class-wuat-admin.php
+msgid "Audit Trail"
+msgstr ""
+
+#: includes/class-wuat-admin.php
+msgid "Export CSV"
+msgstr ""
+
+#: includes/class-wuat-admin.php
+msgid "All Events"
+msgstr ""
+
+#: includes/class-wuat-admin.php
+msgid "Login Success"
+msgstr ""
+
+#: includes/class-wuat-admin.php
+msgid "Login Failed"
+msgstr ""
+
+#: includes/class-wuat-admin.php
+msgid "Logout"
+msgstr ""
+
+#: includes/class-wuat-admin.php
+msgid "Lockout"
+msgstr ""
+
+#: includes/class-wuat-admin.php
+msgid "Off-Hours Login"
+msgstr ""
+
+#: includes/class-wuat-admin.php
+msgid "Username"
+msgstr ""
+
+#: includes/class-wuat-admin.php
+msgid "IP Address"
+msgstr ""
+
+#: includes/class-wuat-admin.php
+msgid "Filter"
+msgstr ""
+
+#: includes/class-wuat-admin.php
+msgid "Reset"
+msgstr ""
+
+#: includes/class-wuat-admin.php
+msgid "Permission denied."
+msgstr ""
+
+#: includes/class-wuat-admin.php
+msgid "No items selected."
+msgstr ""
+
+#: includes/class-wuat-admin.php
+msgid "Exporting…"
+msgstr ""
+
+#: includes/class-wuat-admin.php
+msgid "Export complete."
+msgstr ""
+
+#: includes/class-wuat-admin.php
+msgid "Export failed."
+msgstr ""
+
+#: includes/class-wuat-admin.php
+msgid "Event"
+msgstr ""
+
+#: includes/class-wuat-admin.php
+msgid "User Agent"
+msgstr ""
+
+#: includes/class-wuat-admin.php
+msgid "Time"
+msgstr ""
+
+#: includes/class-wuat-admin.php
+msgid "Details"
+msgstr ""
+
+#: includes/class-wuat-admin.php
+msgid "Delete"
+msgstr ""
+
+#: includes/class-wuat-admin.php
+msgid "log entry"
+msgstr ""
+
+#: includes/class-wuat-admin.php
+msgid "log entries"
+msgstr ""
+
+#: includes/class-wuat-settings.php
+msgid "WUAT Settings"
+msgstr ""
+
+#: includes/class-wuat-settings.php
+msgid "Settings"
+msgstr ""
+
+#: includes/class-wuat-settings.php
+msgid "WP Unauthorized Access Tracker — Settings"
+msgstr ""
+
+#: includes/class-wuat-settings.php
+msgid "Brute-Force Detection"
+msgstr ""
+
+#: includes/class-wuat-settings.php
+msgid "Failure Threshold"
+msgstr ""
+
+#: includes/class-wuat-settings.php
+msgid "Number of failed logins from the same IP that triggers an alert."
+msgstr ""
+
+#: includes/class-wuat-settings.php
+msgid "Time Window (minutes)"
+msgstr ""
+
+#: includes/class-wuat-settings.php
+msgid "The rolling window (in minutes) in which failures are counted."
+msgstr ""
+
+#: includes/class-wuat-settings.php
+msgid "Off-Hours Login Detection"
+msgstr ""
+
+#: includes/class-wuat-settings.php
+msgid "Alert when a monitored user logs in outside the configured business hours. Uses the site timezone configured under Settings › General."
+msgstr ""
+
+#: includes/class-wuat-settings.php
+msgid "Enable Off-Hours Detection"
+msgstr ""
+
+#: includes/class-wuat-settings.php
+msgid "Alert when a monitored user logs in outside business hours."
+msgstr ""
+
+#: includes/class-wuat-settings.php
+msgid "Business Hours Start"
+msgstr ""
+
+#: includes/class-wuat-settings.php
+msgid "Format: HH:MM (24h). Uses the site timezone set under Settings › General."
+msgstr ""
+
+#: includes/class-wuat-settings.php
+msgid "Business Hours End"
+msgstr ""
+
+#: includes/class-wuat-settings.php
+msgid "Format: HH:MM (24h)."
+msgstr ""
+
+#: includes/class-wuat-settings.php
+msgid "Business Days"
+msgstr ""
+
+#: includes/class-wuat-settings.php
+msgid "Days considered business days. Logins on other days are always flagged."
+msgstr ""
+
+#: includes/class-wuat-settings.php
+msgid "Monday"
+msgstr ""
+
+#: includes/class-wuat-settings.php
+msgid "Tuesday"
+msgstr ""
+
+#: includes/class-wuat-settings.php
+msgid "Wednesday"
+msgstr ""
+
+#: includes/class-wuat-settings.php
+msgid "Thursday"
+msgstr ""
+
+#: includes/class-wuat-settings.php
+msgid "Friday"
+msgstr ""
+
+#: includes/class-wuat-settings.php
+msgid "Saturday"
+msgstr ""
+
+#: includes/class-wuat-settings.php
+msgid "Sunday"
+msgstr ""
+
+#: includes/class-wuat-settings.php
+msgid "Monitor Roles"
+msgstr ""
+
+#: includes/class-wuat-settings.php
+msgid "Only logins by users with these roles trigger off-hours alerts."
+msgstr ""
+
+#: includes/class-wuat-settings.php
+msgid "Notifications"
+msgstr ""
+
+#: includes/class-wuat-settings.php
+msgid "Enable Email Alerts"
+msgstr ""
+
+#: includes/class-wuat-settings.php
+msgid "Send email alerts for brute-force attacks and off-hours logins."
+msgstr ""
+
+#: includes/class-wuat-settings.php
+msgid "Alert Email Address"
+msgstr ""
+
+#: includes/class-wuat-settings.php
+msgid "Recipient for security alerts. Defaults to the site admin email."
+msgstr ""
+
+#: includes/class-wuat-settings.php
+msgid "Log Management"
+msgstr ""
+
+#: includes/class-wuat-settings.php
+msgid "Log Retention (days)"
+msgstr ""
+
+#: includes/class-wuat-settings.php
+msgid "Log entries older than this many days are automatically deleted."
+msgstr ""
+
+#: includes/class-wuat-settings.php
+msgid "Anonymize IP Addresses"
+msgstr ""
+
+#: includes/class-wuat-settings.php
+msgid "Mask the last octet of IPv4 / last 80 bits of IPv6 before storage (GDPR)."
+msgstr ""
+
+#: includes/class-wuat-settings.php
+msgid "Enable IP Lookup Links"
+msgstr ""
+
+#: includes/class-wuat-settings.php
+msgid "Show a clickable link to ipinfo.io for each IP address in the log table. Disabled by default to prevent sending visitor IPs to a third-party service."
+msgstr ""
+
+#: includes/class-wuat-admin.php
+#, php-format
+msgctxt "%d = number of items selected for deletion"
+msgid "%d item(s) will be permanently deleted. Continue?"
+msgstr ""

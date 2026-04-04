@@ -1,0 +1,103 @@
+/* ==========================================================================
+   WP Unauthorized Access Tracker — Admin Styles
+   ========================================================================== */
+
+/* ── Filter bar ──────────────────────────────────────────────────────────── */
+.wuat-filter-bar {
+    margin: 12px 0 16px;
+}
+
+.wuat-filter-bar form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+
+.wuat-filter-bar input[type="text"],
+.wuat-filter-bar input[type="date"],
+.wuat-filter-bar select {
+    min-width: 140px;
+}
+
+/* ── Event badges ────────────────────────────────────────────────────────── */
+.wuat-event-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.wuat-event-login_success  { background: #d4edda; color: #155724; }
+.wuat-event-login_failed   { background: #f8d7da; color: #721c24; }
+.wuat-event-logout         { background: #d1ecf1; color: #0c5460; }
+.wuat-event-lockout        { background: #fff3cd; color: #856404; }
+.wuat-event-offhours_login { background: #e2d9f3; color: #432874; }
+
+/* ── Details DL ──────────────────────────────────────────────────────────── */
+.wuat-details {
+    margin: 0;
+    font-size: 11px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0 6px;
+}
+
+.wuat-details dt {
+    font-weight: 600;
+    white-space: nowrap;
+    color: #555;
+}
+
+.wuat-details dd {
+    margin: 0;
+    word-break: break-all;
+}
+
+/* ── Export bar ──────────────────────────────────────────────────────────── */
+.wuat-export-bar {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#wuat-export-status {
+    font-style: italic;
+    color: #555;
+}
+
+/* ── IP address link ─────────────────────────────────────────────────────── */
+.column-ip_address a {
+    font-family: monospace;
+    text-decoration: none;
+}
+
+.column-ip_address a:hover {
+    text-decoration: underline;
+}
+
+/* ── Settings page tweaks ────────────────────────────────────────────────── */
+.wuat-settings-section-title {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 0 4px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 8px;
+}
+
+/* ── Responsive table ────────────────────────────────────────────────────── */
+@media screen and (max-width: 782px) {
+    .wuat-filter-bar form {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .wuat-filter-bar input[type="text"],
+    .wuat-filter-bar input[type="date"],
+    .wuat-filter-bar select {
+        width: 100%;
+    }
+}

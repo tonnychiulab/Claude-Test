@@ -1,0 +1,347 @@
+# WP Unauthorized Access Tracker — Traditional Chinese (zh_TW)
+# Copyright (C) 2024 IT Team
+# This file is distributed under the same license as the WP Unauthorized Access Tracker plugin.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Unauthorized Access Tracker 1.0.0\n"
+"Report-Msgid-Bugs-To: https://example.com/\n"
+"POT-Creation-Date: 2024-01-01 00:00+0000\n"
+"PO-Revision-Date: 2024-01-01 00:00+0000\n"
+"Last-Translator: IT Team <admin@example.com>\n"
+"Language-Team: Traditional Chinese <zh@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Domain: wp-unauthorized-access-tracker\n"
+
+#. Plugin Name of the plugin
+msgid "Unauthorized Access Tracker"
+msgstr "未授權存取追蹤器"
+
+#. Plugin Description
+msgid "Detects and logs unauthorized WordPress admin access, including brute-force attempts and off-hours admin logins."
+msgstr "偵測並記錄未授權的 WordPress 後台存取，包含暴力破解嘗試與非上班時間管理員登入。"
+
+#: includes/class-wuat-alerter.php
+#, php-format
+msgctxt "Email subject for brute-force alert. %s = site name."
+msgid "[%s] Security Alert: Brute-Force Attack Detected"
+msgstr "[%s] 安全警報：偵測到暴力破解攻擊"
+
+#: includes/class-wuat-alerter.php
+msgid "Brute-Force Attack Detected"
+msgstr "偵測到暴力破解攻擊"
+
+#: includes/class-wuat-alerter.php
+#, php-format
+msgctxt "1: site URL"
+msgid "Site: %s"
+msgstr "網站：%s"
+
+#: includes/class-wuat-alerter.php
+#, php-format
+msgctxt "1: IP address"
+msgid "Source IP: %s"
+msgstr "來源 IP：%s"
+
+#: includes/class-wuat-alerter.php
+#, php-format
+msgctxt "1: username"
+msgid "Username: %s"
+msgstr "使用者名稱：%s"
+
+#: includes/class-wuat-alerter.php
+#, php-format
+msgctxt "1: timestamp"
+msgid "Time (UTC): %s"
+msgstr "時間（UTC）：%s"
+
+#: includes/class-wuat-alerter.php
+#, php-format
+msgid "[%s] Security Alert: Off-Hours Admin Login Detected"
+msgstr "[%s] 安全警報：偵測到非上班時間管理員登入"
+
+#: includes/class-wuat-alerter.php
+msgid "Off-Hours Admin Login Detected"
+msgstr "偵測到非上班時間管理員登入"
+
+#: includes/class-wuat-alerter.php
+#, php-format
+msgid "User ID: %d"
+msgstr "使用者 ID：%d"
+
+#: includes/class-wuat-alerter.php
+#, php-format
+msgid "Login Time (site): %s"
+msgstr "登入時間（網站時區）：%s"
+
+#: includes/class-wuat-alerter.php
+msgid "Recent failed attempts from this IP:"
+msgstr "此 IP 最近的登入失敗紀錄："
+
+#: includes/class-wuat-alerter.php
+#, php-format
+msgctxt "Link to plugin settings page."
+msgid "Manage alerts: %s"
+msgstr "管理警報設定：%s"
+
+#: includes/class-wuat-admin.php
+msgid "Audit Trail"
+msgstr "稽核軌跡"
+
+#: includes/class-wuat-admin.php
+msgid "Export CSV"
+msgstr "匯出 CSV"
+
+#: includes/class-wuat-admin.php
+msgid "All Events"
+msgstr "所有事件"
+
+#: includes/class-wuat-admin.php
+msgid "Login Success"
+msgstr "登入成功"
+
+#: includes/class-wuat-admin.php
+msgid "Login Failed"
+msgstr "登入失敗"
+
+#: includes/class-wuat-admin.php
+msgid "Logout"
+msgstr "登出"
+
+#: includes/class-wuat-admin.php
+msgid "Lockout"
+msgstr "鎖定"
+
+#: includes/class-wuat-admin.php
+msgid "Off-Hours Login"
+msgstr "非上班時間登入"
+
+#: includes/class-wuat-admin.php
+msgid "Username"
+msgstr "使用者名稱"
+
+#: includes/class-wuat-admin.php
+msgid "IP Address"
+msgstr "IP 位址"
+
+#: includes/class-wuat-admin.php
+msgid "Filter"
+msgstr "篩選"
+
+#: includes/class-wuat-admin.php
+msgid "Reset"
+msgstr "重設"
+
+#: includes/class-wuat-admin.php
+msgid "Permission denied."
+msgstr "權限不足。"
+
+#: includes/class-wuat-admin.php
+msgid "No items selected."
+msgstr "未選取任何項目。"
+
+#: includes/class-wuat-admin.php
+msgid "Exporting…"
+msgstr "匯出中…"
+
+#: includes/class-wuat-admin.php
+msgid "Export complete."
+msgstr "匯出完成。"
+
+#: includes/class-wuat-admin.php
+msgid "Export failed."
+msgstr "匯出失敗。"
+
+#: includes/class-wuat-admin.php
+msgid "Event"
+msgstr "事件"
+
+#: includes/class-wuat-admin.php
+msgid "User Agent"
+msgstr "使用者代理"
+
+#: includes/class-wuat-admin.php
+msgid "Time"
+msgstr "時間"
+
+#: includes/class-wuat-admin.php
+msgid "Details"
+msgstr "詳細資訊"
+
+#: includes/class-wuat-admin.php
+msgid "Delete"
+msgstr "刪除"
+
+#: includes/class-wuat-admin.php
+msgid "log entry"
+msgstr "紀錄項目"
+
+#: includes/class-wuat-admin.php
+msgid "log entries"
+msgstr "紀錄項目"
+
+#: includes/class-wuat-settings.php
+msgid "WUAT Settings"
+msgstr "WUAT 設定"
+
+#: includes/class-wuat-settings.php
+msgid "Settings"
+msgstr "設定"
+
+#: includes/class-wuat-settings.php
+msgid "WP Unauthorized Access Tracker — Settings"
+msgstr "WP 未授權存取追蹤器 — 設定"
+
+#: includes/class-wuat-settings.php
+msgid "Brute-Force Detection"
+msgstr "暴力破解偵測"
+
+#: includes/class-wuat-settings.php
+msgid "Failure Threshold"
+msgstr "失敗次數閾值"
+
+#: includes/class-wuat-settings.php
+msgid "Number of failed logins from the same IP that triggers an alert."
+msgstr "同一 IP 的登入失敗次數達到此閾值時觸發警報。"
+
+#: includes/class-wuat-settings.php
+msgid "Time Window (minutes)"
+msgstr "時間窗口（分鐘）"
+
+#: includes/class-wuat-settings.php
+msgid "The rolling window (in minutes) in which failures are counted."
+msgstr "統計登入失敗次數的滑動時間窗口（分鐘）。"
+
+#: includes/class-wuat-settings.php
+msgid "Off-Hours Login Detection"
+msgstr "非上班時間登入偵測"
+
+#: includes/class-wuat-settings.php
+msgid "Alert when a monitored user logs in outside the configured business hours. Uses the site timezone configured under Settings › General."
+msgstr "當受監控的使用者在設定的上班時間以外登入時發出警報。使用「設定 › 一般」中設定的網站時區。"
+
+#: includes/class-wuat-settings.php
+msgid "Enable Off-Hours Detection"
+msgstr "啟用非上班時間偵測"
+
+#: includes/class-wuat-settings.php
+msgid "Alert when a monitored user logs in outside business hours."
+msgstr "當受監控的使用者在上班時間以外登入時發出警報。"
+
+#: includes/class-wuat-settings.php
+msgid "Business Hours Start"
+msgstr "上班時間開始"
+
+#: includes/class-wuat-settings.php
+msgid "Format: HH:MM (24h). Uses the site timezone set under Settings › General."
+msgstr "格式：HH:MM（24 小時制）。使用「設定 › 一般」中設定的網站時區。"
+
+#: includes/class-wuat-settings.php
+msgid "Business Hours End"
+msgstr "上班時間結束"
+
+#: includes/class-wuat-settings.php
+msgid "Format: HH:MM (24h)."
+msgstr "格式：HH:MM（24 小時制）。"
+
+#: includes/class-wuat-settings.php
+msgid "Business Days"
+msgstr "上班日"
+
+#: includes/class-wuat-settings.php
+msgid "Days considered business days. Logins on other days are always flagged."
+msgstr "視為上班日的星期幾。非上班日的登入行為一律標記。"
+
+#: includes/class-wuat-settings.php
+msgid "Monday"
+msgstr "星期一"
+
+#: includes/class-wuat-settings.php
+msgid "Tuesday"
+msgstr "星期二"
+
+#: includes/class-wuat-settings.php
+msgid "Wednesday"
+msgstr "星期三"
+
+#: includes/class-wuat-settings.php
+msgid "Thursday"
+msgstr "星期四"
+
+#: includes/class-wuat-settings.php
+msgid "Friday"
+msgstr "星期五"
+
+#: includes/class-wuat-settings.php
+msgid "Saturday"
+msgstr "星期六"
+
+#: includes/class-wuat-settings.php
+msgid "Sunday"
+msgstr "星期日"
+
+#: includes/class-wuat-settings.php
+msgid "Monitor Roles"
+msgstr "監控角色"
+
+#: includes/class-wuat-settings.php
+msgid "Only logins by users with these roles trigger off-hours alerts."
+msgstr "只有擁有這些角色的使用者登入時，才會觸發非上班時間警報。"
+
+#: includes/class-wuat-settings.php
+msgid "Notifications"
+msgstr "通知"
+
+#: includes/class-wuat-settings.php
+msgid "Enable Email Alerts"
+msgstr "啟用 Email 警報"
+
+#: includes/class-wuat-settings.php
+msgid "Send email alerts for brute-force attacks and off-hours logins."
+msgstr "針對暴力破解攻擊與非上班時間登入發送 Email 警報。"
+
+#: includes/class-wuat-settings.php
+msgid "Alert Email Address"
+msgstr "警報收件 Email"
+
+#: includes/class-wuat-settings.php
+msgid "Recipient for security alerts. Defaults to the site admin email."
+msgstr "安全警報的收件人，預設為網站管理員 Email。"
+
+#: includes/class-wuat-settings.php
+msgid "Log Management"
+msgstr "紀錄管理"
+
+#: includes/class-wuat-settings.php
+msgid "Log Retention (days)"
+msgstr "紀錄保留天數"
+
+#: includes/class-wuat-settings.php
+msgid "Log entries older than this many days are automatically deleted."
+msgstr "超過此天數的紀錄項目將自動刪除。"
+
+#: includes/class-wuat-settings.php
+msgid "Anonymize IP Addresses"
+msgstr "匿名化 IP 位址"
+
+#: includes/class-wuat-settings.php
+msgid "Mask the last octet of IPv4 / last 80 bits of IPv6 before storage (GDPR)."
+msgstr "儲存前遮蔽 IPv4 最後一碼 / IPv6 最後 80 位元（符合 GDPR）。"
+
+#: includes/class-wuat-settings.php
+msgid "Enable IP Lookup Links"
+msgstr "啟用 IP 查詢連結"
+
+#: includes/class-wuat-settings.php
+msgid "Show a clickable link to ipinfo.io for each IP address in the log table. Disabled by default to prevent sending visitor IPs to a third-party service."
+msgstr "在紀錄列表中，為每個 IP 位址顯示可點擊的 ipinfo.io 查詢連結。預設關閉，以避免將訪客 IP 傳送給第三方服務。"
+
+#: includes/class-wuat-admin.php
+#, php-format
+msgctxt "%d = number of items selected for deletion"
+msgid "%d item(s) will be permanently deleted. Continue?"
+msgstr "將永久刪除 %d 筆紀錄，確定繼續？"
